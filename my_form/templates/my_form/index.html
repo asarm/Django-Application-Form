@@ -1,0 +1,39 @@
+{% extends 'my_form/main.html' %}
+{% load crispy_forms_tags %}
+
+{% block content%}
+    <div>
+        <p id="notify"></p>
+    </div>
+    <form class="application" method="POST">
+    {% csrf_token %}
+  <div class="form-row">
+    <div class="form-group col-md-6">
+        {{ form.first_name|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-6">
+        {{ form.last_name|as_crispy_field }}
+    </div>
+     <div class="form-group col-md-6">
+      {{ form.email|as_crispy_field }}
+    </div>
+      <div class="form-group col-md-6">
+      {{ form.number|as_crispy_field }}
+    </div>
+  </div>
+  <div class="form-group">
+    {{ form.linkedin|as_crispy_field }}
+  </div>
+  <div class="form-group">
+    {{ form.github|as_crispy_field }}
+  </div>
+    <div class="form-group col-md-4">
+     {{ form.position|as_crispy_field }}
+    </div>
+     <div class="form-group col-md-10">
+         {{ form.about_me|as_crispy_field }}
+     </div>
+  <button type="submit" class="btn btn-primary btn-lg btn-block">SEND</button>
+</form>
+
+{% endblock %}
