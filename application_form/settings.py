@@ -123,5 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 EMAIL_BACKEND = 'django_mailgun.MailgunBackend'
-MAILGUN_ACCESS_KEY = 'key-84bda5958e311a53368b16379db276b6'
-MAILGUN_SERVER_NAME = 'sandbox8e39e6be8af842bc87eadad4cc3d85f5.mailgun.org'
+MAILGUN_ACCESS_KEY = ''
+MAILGUN_SERVER_NAME = ''
