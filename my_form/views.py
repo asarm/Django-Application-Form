@@ -34,8 +34,8 @@ def send_mail(f_name,l_name,position,github,linkedin,mail,about):
                        "Github Link = "+ github+ "\n"+ \
                        "Email = "+ mail + "\n"+\
                         about
-        sender = "ardaasar0@gmail.com"
-        receipient = "ardaasar0@gmail.com"
+        sender = "senderEmail"
+        receipient = "receipientEmail"
         msg = EmailMultiAlternatives(subject, text_content, sender, [receipient])
         msg.send()
 
